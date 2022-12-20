@@ -1,0 +1,381 @@
+ruby-oj (3.13.7-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Fri, 11 Nov 2022 18:04:48 +0800
+
+ruby-oj (3.13.7-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Use secure URI in Homepage field.
+
+  [ Cédric Boutillier ]
+  * New upstream version 3.13.7
+
+ -- Cédric Boutillier <boutil@debian.org>  Tue, 21 Sep 2021 07:20:42 +0200
+
+ruby-oj (3.13.3-1) unstable; urgency=medium
+
+  * New upstream version 3.13.3
+  * Bump Standards-Version to 4.6.0 (no changes needed)
+  * Remove trailing space in previous changelog entry
+
+ -- Cédric Boutillier <boutil@debian.org>  Wed, 01 Sep 2021 16:03:28 +0200
+
+ruby-oj (3.11.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 3.11.0
+
+ -- Francisco Emanoel <francisco170142329@gmail.com>  Tue, 19 Jan 2021 22:21:26 -0300
+
+ruby-oj (3.10.17-1) unstable; urgency=medium
+
+  * New upstream version 3.10.17
+  * update build-dependencies
+  * Drop 04_more-tolerant-float-tests.patch, included in new version
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+
+ -- Cédric Boutillier <boutil@debian.org>  Tue, 22 Dec 2020 17:17:02 +0100
+
+ruby-oj (3.10.13-2) unstable; urgency=medium
+
+  * Team upload.
+  * Cherry pick commit from upstream develop branch to fix test failure
+    (Closes: #969579)
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 05 Sep 2020 19:53:14 +0530
+
+ruby-oj (3.10.13-1) unstable; urgency=medium
+
+  * New upstream version 3.10.13
+  * Use v4 watch file
+  * Do not export gbp.conf
+  * debhelper-compat level to 13 and Rules-Requires-Root to no
+
+ -- Cédric Boutillier <boutil@debian.org>  Fri, 28 Aug 2020 12:30:58 +0200
+
+ruby-oj (3.10.8-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 3.10.8
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 26 Jul 2020 18:49:04 +0530
+
+ruby-oj (3.10.7-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Set field Upstream-Contact in debian/copyright.
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Pirate Praveen ]
+  * Bump minimum version of gem2deb to 1.0~
+  * New upstream version 3.10.7
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 23 Jul 2020 20:25:50 +0530
+
+ruby-oj (3.10.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 3.10.1
+  * Update years of upstream copyright
+
+ -- Lucas Kanashiro <lucas.kanashiro@canonical.com>  Mon, 20 Jan 2020 19:56:38 -0300
+
+ruby-oj (3.9.2-1) unstable; urgency=medium
+
+  * New upstream version 3.9.2
+
+ -- Cédric Boutillier <boutil@debian.org>  Wed, 20 Nov 2019 14:35:37 +0100
+
+ruby-oj (3.9.1-1) unstable; urgency=medium
+
+  * New upstream version 3.9.1
+
+ -- Cédric Boutillier <boutil@debian.org>  Wed, 04 Sep 2019 18:38:38 +0200
+
+ruby-oj (3.8.1-1) unstable; urgency=medium
+
+  [ Lucas Kanashiro ]
+  * Do not build depend on ruby-sqlite3
+    as tests against rails are not run
+
+  [ Cédric Boutillier ]
+  * New upstream version 3.8.1
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+  * Trim trailing whitespace.
+  * Bump debhelper from old 11 to 12.
+  * Set upstream metadata fields: Name.
+  * Use versioned copyright format URI.
+  * Add salsa-ci.yml but don't export to source package
+
+ -- Cédric Boutillier <boutil@debian.org>  Sun, 11 Aug 2019 22:36:56 +0200
+
+ruby-oj (3.7.6-1) unstable; urgency=medium
+
+  * New upstream version 3.7.6
+    fixes issue for 32bit architectures (Closes: #914546)
+  * Drop 04_skip_failing_test_914546.patch, not needed anymore
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+
+ -- Cédric Boutillier <boutil@debian.org>  Fri, 04 Jan 2019 08:22:12 +0100
+
+ruby-oj (3.7.1-2) unstable; urgency=medium
+
+  * Add 04_skip_failing_test_914546.patch disabling test_time_neg, failing on
+    32 bit architecture, to decrease severity of bug #914546.
+
+ -- Cédric Boutillier <boutil@debian.org>  Fri, 28 Dec 2018 00:55:46 +0100
+
+ruby-oj (3.7.1-1) unstable; urgency=medium
+
+  * New upstream version 3.7.1
+  * Bump Standards-Version to 4.2.1 (no changes needed)
+
+ -- Cédric Boutillier <boutil@debian.org>  Thu, 22 Nov 2018 09:14:48 +0100
+
+ruby-oj (3.6.6-1) unstable; urgency=medium
+
+  * New upstream version 3.6.6
+
+ -- Cédric Boutillier <boutil@debian.org>  Fri, 17 Aug 2018 04:34:54 +0200
+
+ruby-oj (3.6.5-1) unstable; urgency=medium
+
+  * Bump debhelper compatibility level to 11
+  * New upstream version 3.6.5
+  * Use salsa.debian.org in Vcs-* fields
+  * Move debian/watch to gemwatch.debian.net
+  * Bump Standards-Version to 4.1.5 (no changes needed)
+
+ -- Cédric Boutillier <boutil@debian.org>  Tue, 31 Jul 2018 00:48:10 +0200
+
+ruby-oj (3.4.0-1) unstable; urgency=medium
+
+  * New upstream version 3.4.0
+    + The 3.x series has support for Ruby 2.5 since 3.3.6 (Closes: #888131)
+  * Bump Standards-Version to 4.1.3 (no changes needed)
+  * Use https for hps for homepage and watch file
+  * Set Multi-Arch: same
+
+ -- Cédric Boutillier <boutil@debian.org>  Sun, 04 Feb 2018 22:27:09 +0100
+
+ruby-oj (3.3.9-1~exp1) experimental; urgency=medium
+
+  * New upstream version 3.3.6
+  * Refresh 01_dont_mess_with_loadpath.patch
+  * Bump Standards-Version to 4.1.1 (no changes needed)
+  * Bump debhelper compatibility level to 10
+  * Run tests by groups, like upstream
+
+ -- Cédric Boutillier <boutil@debian.org>  Sun, 26 Nov 2017 00:43:17 +0100
+
+ruby-oj (2.17.4-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 23 Sep 2016 16:13:17 +0530
+
+ruby-oj (2.17.3-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.17.3
+
+ -- Cédric Boutillier <boutil@debian.org>  Wed, 24 Aug 2016 12:13:26 +0200
+
+ruby-oj (2.17.1-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.17.1
+    + fix test failure on i386 (Closes: #830247)
+    + add /test_mimic_rails_datetime.rb to the list of skipped tests because
+      of rails dependency
+
+ -- Cédric Boutillier <boutil@debian.org>  Sat, 09 Jul 2016 08:40:10 +0200
+
+ruby-oj (2.16.1-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.16.1
+
+ -- Cédric Boutillier <boutil@debian.org>  Thu, 23 Jun 2016 17:01:16 +0200
+
+ruby-oj (2.15.1-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.15.1
+  * Bump debhelper compatibility level to 9
+  * Remove version in the gem2deb build-dependency
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.8 (no changes needed)
+  * debian/patches:
+    + drop 02_avoid_name_conflict_with_ext.patch, not needed anymore
+    + drop 0001-Updated-for-Ruby-2.3.0.patch, applied upstream
+    + refresh 03_find_test_helper.patch
+  + Exclude test_bigd, using rails
+
+ -- Cédric Boutillier <boutil@debian.org>  Thu, 02 Jun 2016 00:15:36 +0200
+
+ruby-oj (2.12.10-4) unstable; urgency=medium
+
+  * Team upload.
+  * Add Ruby 2.3 patch from upstream (0001-Updated-for-Ruby-2.3.0.patch)
+    (Closes: #815771)
+
+ -- Antonio Terceiro <terceiro@debian.org>  Wed, 24 Feb 2016 11:00:03 -0300
+
+ruby-oj (2.12.10-3) unstable; urgency=medium
+
+  * Team upload.
+  * Also remove Build-Depends: ruby-railties as I intended to.
+
+ -- Christian Hofstaedtler <zeha@debian.org>  Tue, 08 Sep 2015 15:30:16 +0000
+
+ruby-oj (2.12.10-2) unstable; urgency=medium
+
+  * Team upload.
+  * Don't build-depend on ruby-activemodel/activesupport, to cut
+    dependency chain at a sane point. Oj has integration with rails,
+    but doesn't actively need rails. This also disables the test for
+    the rails integration.
+
+ -- Christian Hofstaedtler <zeha@debian.org>  Tue, 08 Sep 2015 11:30:22 +0000
+
+ruby-oj (2.12.10-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.12.10
+  * Autopkgtest: rely on default behaviour for Ruby packages instead of
+    implementing explicit tests (which were missing some build-deps anyway)
+
+ -- Cédric Boutillier <boutil@debian.org>  Mon, 27 Jul 2015 05:19:31 +0200
+
+ruby-oj (2.12.9-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.12.9
+
+ -- Cédric Boutillier <boutil@debian.org>  Wed, 24 Jun 2015 10:20:35 +0200
+
+ruby-oj (2.12.8-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.12.8
+  * Drop 90_32bit_fix.patch, applied upstream
+
+ -- Cédric Boutillier <boutil@debian.org>  Sun, 24 May 2015 23:04:30 +0200
+
+ruby-oj (2.12.5-2) unstable; urgency=medium
+
+  * Apply upstream patch 90_32bit_fix.patch for 32 bit architectures
+    + solves a test failure for those architectures because of a wrong type.
+
+ -- Cédric Boutillier <boutil@debian.org>  Tue, 05 May 2015 16:18:03 +0200
+
+ruby-oj (2.12.5-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.12.5
+  * The source code has relicensed from BSD-3-clause to Expat
+    + change the license of the packaging accordingly
+  * ruby-oj has now integration with ruby-activesupport
+    + adapt build dependency accordingly
+  * Run every test in isolation because of interdependencies between the tests
+    + run also tests under test/isolated
+  * Add 03_find_test_helper.patch: fix relative path in require to find
+    test/helper.rb in test/test_debian.rb
+
+ -- Cédric Boutillier <boutil@debian.org>  Fri, 01 May 2015 21:46:50 +0200
+
+ruby-oj (2.10.3-2) unstable; urgency=medium
+
+  * Imported Upstream version 2.10.3
+  * Bump Standards-Version to 3.9.6
+  * Set Testsuite field to autopkgtest-pkg-ruby
+
+ -- Cédric Boutillier <boutil@debian.org>  Tue, 07 Oct 2014 23:47:05 +0200
+
+ruby-oj (2.10.2-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.10.2
+    + fix string corruption causing problems in test_io_string tests
+  * Remove 03_deactivate_test_io_string.patch, not needed anymore
+  * Add autopkgtest support
+
+ -- Cédric Boutillier <boutil@debian.org>  Wed, 27 Aug 2014 05:42:00 +0200
+
+ruby-oj (2.10.1-1) unstable; urgency=medium
+
+  [ Caitlin Matos ]
+  * Team upload
+  * New upstream release
+  * Versioned build dependency for ruby-minitest
+
+  [ Cédric Boutillier ]
+  * Add 03_deactivate_test_io_string.patch to deactivate tests causing others
+    to fail on some architectures (Closes: #754761)
+
+ -- Caitlin Matos <caitlin.matos@zoho.com>  Mon, 18 Aug 2014 17:53:34 -0400
+
+ruby-oj (2.9.6-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.9.6
+  * Refresh 01_dont_mess_with_loadpath.patch
+  * Modify ruby-tests.rb to load individual test files
+  * Clean some json files after the tests
+  * Build-depend on ruby-minitest
+
+ -- Cédric Boutillier <boutil@debian.org>  Mon, 23 Jun 2014 06:51:59 +0200
+
+ruby-oj (2.9.4-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.9.4
+  * Drop support for ruby2.0
+
+ -- Cédric Boutillier <boutil@debian.org>  Thu, 29 May 2014 23:59:19 +0200
+
+ruby-oj (2.7.3-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.7.3
+
+ -- Cédric Boutillier <boutil@debian.org>  Mon, 14 Apr 2014 16:16:42 +0200
+
+ruby-oj (2.5.5-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.5.5
+  * Refresh 02_avoid_name_conflict_with_ext.patch
+
+ -- Cédric Boutillier <boutil@debian.org>  Sat, 01 Mar 2014 00:17:00 +0100
+
+ruby-oj (2.5.3-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.5.3
+
+ -- Cédric Boutillier <boutil@debian.org>  Fri, 10 Jan 2014 08:25:41 +0100
+
+ruby-oj (2.4.0-1) unstable; urgency=medium
+
+  [ Jérémy Bobbio ]
+  * Add git-buildpackage configuration
+
+  [ Cédric Boutillier ]
+  * Imported Upstream version 2.4.0
+    + fix build on sparc
+  * Bump Standards-Version to 3.9.5 (no changes needed)
+  * Bump version in gem2deb build-dependency to ensure the extension is built
+    for Ruby2.0
+
+ -- Cédric Boutillier <boutil@debian.org>  Mon, 09 Dec 2013 07:58:50 +0100
+
+ruby-oj (2.1.4-1) unstable; urgency=low
+
+  * Imported Upstream version 2.1.4
+  * debian/patches:
+    + refresh and fix extension of 02_avoid_name_conflict_with_ext.patch
+    + drop 03_disable_deep_nest_test.patch, not needed anymore
+
+ -- Cédric Boutillier <boutil@debian.org>  Wed, 11 Sep 2013 23:01:38 +0200
+
+ruby-oj (2.0.10-1) unstable; urgency=low
+
+  * Initial release (Closes: #703558)
+
+ -- Cédric Boutillier <boutil@debian.org>  Thu, 21 Mar 2013 00:43:03 +0100

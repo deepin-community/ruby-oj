@@ -1,0 +1,26 @@
+Description: add relative path so that some tests can finally find test/helper.rb
+Author: Cédric Boutillier <boutil@debian.org>
+Last-Update: 2016-06-01
+Forwarded: no
+
+--- a/test/test_debian.rb
++++ b/test/test_debian.rb
+@@ -1,6 +1,6 @@
+ # encoding: UTF-8
+ 
+-require 'helper'
++require './test/helper'
+ 
+ class DebJuice < Minitest::Test
+   class Jam
+--- a/test/isolated/test_mimic_as_json.rb
++++ b/test/isolated/test_mimic_as_json.rb
+@@ -3,7 +3,7 @@
+ 
+ $: << File.dirname(__FILE__)
+ 
+-require 'helper'
++require './test/helper'
+ require 'oj'
+ 
+ class ObjectFolder < Minitest::Test

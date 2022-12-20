@@ -1,0 +1,19 @@
+Description: do not mess with $LOAD_PATH
+ this is not at all needed for the tests
+Author: Cédric Boutillier <boutil@debian.org>
+Forwarded: not-needed
+Last-Update: 2017-09-30
+
+--- a/test/helper.rb
++++ b/test/helper.rb
+@@ -4,10 +4,6 @@
+ 
+ $VERBOSE = true
+ 
+-%w(lib ext test).each do |dir|
+-  $LOAD_PATH.unshift File.expand_path("../../#{dir}", __FILE__)
+-end
+-
+ require 'minitest'
+ require 'minitest/autorun'
+ require 'stringio'

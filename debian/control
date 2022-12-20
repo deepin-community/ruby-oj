@@ -1,0 +1,30 @@
+Source: ruby-oj
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Cédric Boutillier <boutil@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               gem2deb (>= 1),
+               rake
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-oj.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-oj
+Homepage: https://www.ohler.com/oj
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-oj
+Architecture: any
+XB-Ruby-Versions: ${ruby:Versions}
+Multi-Arch: same
+Depends: ${misc:Depends},
+         ${ruby:Depends},
+         ${shlibs:Depends}
+Suggests: ruby-activesupport
+Description: fast JSON parser and serializer for Ruby
+ JSON (or JavaScript Object Notation) is a text-based open standard designed
+ for human-readable data interchange.
+ .
+ Oj (Optimized JSON) is a Ruby library written to provide speed optimized
+ handling of JSON, for parsing JSON and serializing objects.
